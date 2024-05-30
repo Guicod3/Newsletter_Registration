@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Newsletter</title>
+    <link rel="stylesheet" href="/assets/styleindex.css">
+</head>
+<body>
+    <header>
+        <h1>Inscreva-se na nossa <span class="destaque">Newsletter</span> Exclusiva!</h1>
+
+        <ul>
+            <li>Receba as últimas atualizações diretamente na sua caixa de entrada.</li>
+            <li>Acesse conteúdos exclusivos disponíveis apenas para assinantes da newsletter.</li>
+            <li>Concorra a prêmios exclusivos para assinantes</li>
+        </ul>
+    </header>
+    
+    <section>
+        <span class="destaque"><h3>Inscreva-se agora!</h3></span>
+        <form action="/subscription" method="post">
+            <label for="username">Nome</label>
+            <input type="text" name="username" id="username">
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email">
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    
+
+        <p id="footer">Nós valorizamos sua privacidade. Suas informações estão seguras conosco e nunca serão compartilhadas sem sua permissão.</p>
+</body>
+</html>

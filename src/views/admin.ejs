@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/styleadmin.css">
+    <title>Admin email</title>
+</head>
+<body>
+    <h2>Tabela de usuários</h2>
+    <div>
+        <ul>
+            <%users.forEach((user, index) => { %>
+                <% index++ %>
+                <li><%= index %> - <%= user.username %>: <%=user.email %></li>
+           <% }) %>
+        </ul>
+    </div>
+
+    <div id="apagar">
+        <form action="/deleteUser" method="post">
+            <label for="delete">Apague um usuário</label>
+            <input type="number" name="delete" id="delete" placeholder="ID do usuário">
+            <button type="submit">Deletar</button>
+        </form>
+    </div>
+</body>
+</html>
